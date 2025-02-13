@@ -1,0 +1,3 @@
+curl -X DELETE http://127.0.0.1:8000/api/users/4/ \
+  -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MzU3NDU2LCJpYXQiOjE3MzkzNTM4NTYsImp0aSI6ImMyMWZkZDVjYmI2YTRhMzRhZjFmMDljYTQ1ZDQyYmUxIiwidXNlcl9pZCI6MX0.wq1gPWbQLvU3vr8terET1VTfUiaFuTgAzIBCQO7dScM"
+
