@@ -1,3 +1,12 @@
+
+
+prakash@DESKTOP-C26OAB4:~/automation/switch_test_scripts$ ./toggle_on_1.sh
+{"status":"Switch is now ON"}prakash@DESKTOP-C26OAB4:~/automation/switch_test_scripts$ ./get_switches.sh
+[{"id":2,"name":"Kitchen Light","is_on":false},{"id":1,"name":"Hall Light","is_on":true}]prakash@DESKTOP-C26OAB4:~/automation/switch_test_scripts$ ./get_swi./toggle_on_1.sh
+{"status":"Switch is now OFF"}prakash@DESKTOP-C26OAB4:~/automation/switch_test_scripts$ ./get_switches.sh
+[{"id":2,"name":"Kitchen Light","is_on":false},{"id":1,"name":"Hall Light","is_on":false}]prakash@DESKTOP-C26OAB4:~/automation/switch_test_scripts$
+
+
 ;./get_switches.sh 
 [{"id":2,"name":"Kitchen Light","is_on":true},{"id":1,"name":"Living Room Light","is_on":false}]pi@raspberrypi:~/automation/switch_test_scripts $ ./get_switches./turn_on_1.sh 
 {"status":"Switch turned ON"}pi@raspberrypi:~/automation/switch_test_scripts $ ./get_switches.sh 

@@ -1,2 +1,3 @@
-curl -X GET http://127.0.0.1:8000/api/switches/
+curl -X GET http://127.0.0.1:8000/api/switches/ \
+ -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NTUyNTMwLCJpYXQiOjE3Mzk1NDg5MzAsImp0aSI6ImQzNzAyZjA0MTAwOTQxZjI5YTg1YjFhNDliYTE0NDIyIiwidXNlcl9pZCI6Mn0.mPwlCpuSxprjdfOUW7hBhJJ9OwL2w4Hg1ERm9BeldQQ"
 

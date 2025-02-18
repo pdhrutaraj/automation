@@ -723,7 +723,24 @@ Switch Control and Toggle API Integration
 Responsive Design
 Want to add dark mode, toast notifications, or better token storage (localStorage)? Let me know! 😊
 
+sql
 
+prakash@DESKTOP-C26OAB4:~/automation/automation$ sudo -u postgres psql
+[sudo] password for prakash:
+psql (17.2 (Ubuntu 17.2-1.pgdg24.04+1))
+Type "help" for help.
 
+postgres=# create database automationdb;
+CREATE DATABASE
+postgres=# create user automationdbowner with password 'automationdbowner';
+CREATE ROLE
+postgres=# grant all on database automationdb to automationdbowner;
+GRANT
+postgres=# GRANT ALL PRIVILEGES ON DATABASE automationdb TO automationdbowner;
+GRANT
+postgres=#
+postgres=# alter database automationdb owner to automationdbowner;
+ALTER DATABASE
+postgres=# \q
 
 

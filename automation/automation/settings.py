@@ -23,9 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-9=-&eb38x_1b+*zgee^eqv=37&237zava_(zw5v9^ednq%gi^$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+#DEBUG = True
+DEBUG = os.getenv("DEBUG", "False") == "True"
 
-ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -84,16 +86,23 @@ WSGI_APPLICATION = 'automation.wsgi.application'
 #    }
 #}
 
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql',
+#        'NAME': 'automationdb',
+#        'USER': 'automationdbowner',
+#        'PASSWORD': 'automationdbowner',
+#        'HOST': 'localhost',
+#        'PORT': '5432',
+#    }
+#}
+
+import dj_database_url
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'automationdb',
-        'USER': 'automationdbowner',
-        'PASSWORD': 'automationdbowner',
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
+    'default': dj_database_url.config(default=os.getenv("DATABASE_URL"))
 }
+
 
 from datetime import timedelta
 
